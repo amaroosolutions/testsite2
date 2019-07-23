@@ -20,7 +20,7 @@
 #################################################################################
 
 
-from . import override_allocation_line
+from.import override_allocation_line
 
 
 
