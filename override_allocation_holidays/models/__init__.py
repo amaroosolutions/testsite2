@@ -20,6 +20,7 @@
 #################################################################################
 
 
-from . import hr.leave.allocation
+from . import override_allocation_line
+
 
 
