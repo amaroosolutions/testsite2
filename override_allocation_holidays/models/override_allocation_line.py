@@ -30,11 +30,10 @@ class HolidaysAllocation(models.Model):
     def _check_leave_type_validity(self):
         for allocation in self:
             if allocation.holiday_status_id.validity_start and allocation.holiday_status_id.validity_stop:
-                vstart = allocation.holiday_status_id.validity_start
+                
                 vstop = allocation.holiday_status_id.validity_stop
                 today = fields.Date.today()
 
                 if vstop < today:
-                    raise UserError(_('You can only allocate %s upto %s and before %s') % (allocation.holiday_status_id.display_name,
-                                                                                  allocation.holiday_status_id.validity_start, allocation.holiday_status_id.validity_stop))
+                    raise UserError(_('You can only allocate %s upto %s and before %s') % (allocation.holiday_status_id.display_name, allocation.holiday_status_id.validity_stop))
 
