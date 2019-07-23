@@ -22,7 +22,7 @@ from odoo import api, fields, models, _
 from odoo.exceptions import ValidationError
 
 ## Inherit class sale.order.line for validate amount of product
-class SaleOrderLine(models.Model):
+class HolidaysAllocation(models.Model):
     _inherit = "hr.leave.allocation"
 
     @api.multi
