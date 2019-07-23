@@ -35,5 +35,5 @@ class HolidaysAllocation(models.Model):
                 today = fields.Date.today()
 
                 if vstop < today:
-                    raise UserError(_('You can only allocate %s upto %s and before %s') % (allocation.holiday_status_id.display_name, allocation.holiday_status_id.validity_stop))
+                    raise UserError(_('You can only allocate %s upto %s') % (allocation.holiday_status_id.display_name, allocation.holiday_status_id.validity_stop))
 
