@@ -20,6 +20,6 @@
 #################################################################################
 
 
-from . import hr.leave.allocation
+from . import hr_leave_allocation
 
 
