@@ -26,7 +26,7 @@
     'license': 'AGPL-3',
     'website': 'http://www.amaroosolutions.co.uk',
     'description': """ Override Holiday Allocation Dates """, 
-    'version': '1.3',
+    'version': '1.4',
     'depends': ['base','hr_holidays'],
     'data': [],
     
