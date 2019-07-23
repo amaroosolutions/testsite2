@@ -35,6 +35,6 @@ class HolidaysAllocation(models.Model):
                 today = fields.Date.today()
 
                 if vstop < today:
-                    raise Warning(_('You can only allocate %s upto %s and before %s') % (allocation.holiday_status_id.display_name,
-                                                                                  allocation.holiday_status_id.validity_start, allocation.holiday_status_id.validity_stop))
+                    raise Warning(_('The leave type %s end date is in the past, Please update or create new leave type') % (allocation.holiday_status_id.display_name))
+                                                                                  
 
