@@ -25,11 +25,11 @@
     'summary': """Allow Leaves to be alocated before valid date""",
     'license': 'AGPL-3',
     'website': 'http://www.amaroosolutions.co.uk',
-    'description': """ """, 
+    'description': """ Override Holiday Allocation Dates """, 
     'version': '1.3',
     'depends': ['base','hr_holidays'],
     'data': [],
-    'images': [],
+    
     'installable': True,
     'application': True,
     'auto_install': False,
