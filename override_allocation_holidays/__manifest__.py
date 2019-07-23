@@ -26,7 +26,7 @@
     'license': 'AGPL-3',
     'website': 'http://www.amaroosolutions.co.uk',
     'description': """ """, 
-    'version': '1.2',
+    'version': '1.3',
     'depends': ['base','hr_holidays'],
     'data': [],
     'images': [],
