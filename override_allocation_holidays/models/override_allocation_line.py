@@ -34,7 +34,7 @@ class SaleOrderLine(models.Model):
                 vstop = allocation.holiday_status_id.validity_stop
                 today = fields.Date.today()
 
-                if vstart > today or vstop < today:
-                    raise UserError(_('You  TEST can allocate %s only between %s and %s') % (allocation.holiday_status_id.display_name,
+                if vstop < today:
+                    raise UserError(_('You can only allocate %s upto %s and before %s') % (allocation.holiday_status_id.display_name,
                                                                                   allocation.holiday_status_id.validity_start, allocation.holiday_status_id.validity_stop))
 
