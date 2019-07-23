@@ -29,7 +29,7 @@ class HolidaysAllocation(models.Model):
     @api.constrains('holiday_status_id')
     def _check_leave_type_validity(self):
         for allocation in self:
-            if allocation.holiday_status_id.validity_start and allocation.holiday_status_id.validity_stop:
+            if allocation.holiday_status_id.validity_stop:
                 
                 vstop = allocation.holiday_status_id.validity_stop
                 today = fields.Date.today()
