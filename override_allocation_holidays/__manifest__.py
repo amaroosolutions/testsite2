@@ -29,7 +29,7 @@
     'version': '1.1',
     'depends': ['base','hr_holidays'],
     'data': [],
-    'images': ['static/description/banner.png'],
+    'images': [],
     'installable': True,
     'application': True,
     'auto_install': False,
